@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body {
+    font-size:32px ;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 86%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainContainer {
+    width: 61%;
+    background-color: hsl(0, 0%, 100%);
+    border-top-left-radius: 1.9vw;
+    border-bottom-left-radius: 1.9vw;
+    border-top-right-radius: 1.9vw;
+    border-bottom-right-radius:12vw ;
+    padding: 2.5% 3% 3% 4%;
+}
+
+#textBoxs {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    
+}
+
+.textBoxContainer {
+    margin-right: 9%;
+
+}
+
+.textBoxItem {
+    width: 11.5vw;
+    padding: 7% 7% 7% 14%;
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+    border-radius: .6vw;
+    border-style: solid;
+    border-width: .09vw;
+    border-color: hsl(0, 0%, 86%);
+    cursor: pointer;
+    outline: none;
+}
+
+::placeholder {
+    color: hsl(0, 1%, 44%);
+}
+
+.textBoxItem:focus {
+    color: hsl(0, 0%, 8%);
+    border-color: hsl(259, 100%, 65%);
+}
+
+.label {
+    color: hsl(0, 1%, 44%);
+    font-size: .95vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .25vw;
+}
+
+#calculate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /*top: -.8vw;*/
+}
+
+hr {
+    width: 92%;
+    height: 0;
+    border-color: (0, 0%, 86%);
+    border-width: thin;
+    opacity: .5;
+    
+}
+
+#arrowContainer {
+    background-color: hsl(259, 100%, 65%);
+    padding: 6%;
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 1.5vw;
+}
+
+#arrowContainer:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 8%);
+}
+
+#outputs {
+    position: relative;
+    /*top: -.8vw;*/
+}
+
+.outputItem {
+    font-size: 7.3vw;
+    font-weight: 800;
+    line-height: 7.9vw;
+    color: hsl(0, 0%, 8%);
+    font-style: italic;
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 1.1vw;
+}
+
+.emptyError {
+    font-size: 1.05vw;
+    color: hsl(0, 69%, 75%);
+    font-style: italic;
+    font-weight: 500;
+    margin-top: .5vw;
+    display: none;
+}
+
+.errorInvalid {
+    font-size: .99vw;
+    color: hsl(0, 69%, 75%);
+    font-style: italic;
+    font-weight: 500;
+    margin-top: .5vw;
+    display: none;
+}
+
+#errorInvalidDate {
+    font-size: .99vw;
+    color: hsl(0, 69%, 75%);
+    font-style: italic;
+    font-weight: 500;
+    margin-top: .5vw;
+    display: none;
+}
+
+@media screen and (max-width : 700px) {
+    body {
+        align-items: flex-start;
+    }
+    #mainContainer {
+        margin-top: 25%;
+        width: 92%;
+        border-top-left-radius: 5vw;
+        border-bottom-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+        border-bottom-right-radius:24vw ;
+        padding: 7% 5% 10% 5%;
+    }
+
+    #textBoxs {
+        width: 80vw;
+        margin-bottom: 20%;
+        justify-content: space-between;
+    }
+
+    .textBoxContainer {
+        margin-right: 4.8vw;
+    
+    }
+
+    .textBoxItem {
+        width: 23.8vw;
+        padding: 12% 10% 12% 16%;
+        border-radius: 2vw;
+        border-width: .09vw;
+        font-size: 5.5vw;
+    }
+
+    .label {
+        
+        font-size: 3.5vw;
+        letter-spacing: .75vw;
+    }
+
+    #calculate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 20%;
+        /*top: -.8vw;*/
+    }
+    
+    hr {
+        width: 100%;
+        height: 0;
+        border-width: thin;
+        opacity: .5;
+        
+    }
+    
+    #arrowContainer {
+        padding: 10%;
+        width: 6vw;
+        height: 6vw;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .outputItem {
+        font-size: 15.2vw;
+        line-height: 17vw;
+    }
+
+    #arrowIcon {
+        width: 8vw;
+    }
+}
+
+

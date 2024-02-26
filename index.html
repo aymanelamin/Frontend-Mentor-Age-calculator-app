@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  
+</head>
+<body>
+  <div id="mainContainer">
+
+    <div id="textBoxs">
+      <div class="textBoxContainer" id="textBoxContainer1">
+        <label for="textBox1" id="label1" class="label">Day</label>
+        <input class="textBoxItem" id="textBox1" placeholder="DD" maxlength="2"> 
+        <p class="emptyError" id="emptyError1">this field is required</p>
+        <p class="errorInvalid" id="errorInvalid1">must be a valid day</p>
+        <p id="errorInvalidDate">must be a valid date</p>
+      </div>
+      <div class="textBoxContainer" id="textBoxContainer2">
+        <label for="textBox2" id="label2" class="label">Month</label>
+        <input class="textBoxItem" id="textBox2" placeholder="MM" maxlength="2"> 
+        <p class="emptyError" id="emptyError2">this field is required</p>
+        <p class="errorInvalid" id="errorInvalid2">must be a valid month</p>
+      </div>
+      <div class="textBoxContainer" id="textBoxContainer3">
+        <label for="textBox3" id="label3" class="label">Year</label>
+        <input class="textBoxItem" id="textBox3" placeholder="YYYY" maxlength="4">
+        <p class="emptyError" id="emptyError3">this field is required</p> 
+        <p class="errorInvalid" id="errorInvalid3">must be in the past</p>
+      </div>
+    
+    </div>
+
+    <div id="calculate">
+      <hr>
+      <div id="arrowContainer" onclick="calculat()">
+        <img src="assets/images/icon-arrow.svg" id="arrowIcon" alt="arrowIcon">
+      </div>
+    </div>
+
+    <div id="outputs">
+      <p class="outputItem" id="outputYears"><span id="yearsValue">--</span>years</p>
+      <p class="outputItem" id="outputMonths"><span id="monthsValue">--</span>months</p>
+      <p class="outputItem" id="outputDays"><span id="daysValue">--</span>days</p>
+    </div>
+
+</div>
+ 
+  
+  <script src="main.js"></script>
+</body>
+</html>
